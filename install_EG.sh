@@ -51,15 +51,3 @@ conda install -c bioconda fastqc -y
 conda deactivate
 #################################
 
-# install jellyfish
-conda create -n jellyfish_env -y
-conda activate  jellyfish_env
-conda install -c conda-forge jellyfish -y
-conda deactivate
-#################################
-
-# install genomescope2
-conda create -n genomescope2 -y
-conda activate genomescope2
-conda install -c bioconda genomescope2 -y
-conda deactivate
