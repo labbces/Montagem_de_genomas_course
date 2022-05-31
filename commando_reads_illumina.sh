@@ -2,9 +2,9 @@ cd
 cd PRATICA_ENSAMBLAGEM_DE_GENOMAS
 # Creo datos pacbio con parametros nina
 conda activate bbduk_env
-randomreads.sh ref=complete_genoma.fasta out=PacBio.fq pacbio=t pbmin=0.001 pbmax=0.01 coverage=20 minlength=1500 maxlength=30000 midlength=15000
+randomreads.sh ref=complete_genome.fasta out=PacBio.fq pacbio=t pbmin=0.001 pbmax=0.01 coverage=20 minlength=1500 maxlength=30000
 # Creo datos illumina paired end
-randomreads.sh ref=complete_genoma.fasta out1=bbmap_illumina_.R1.fq out2=bbmap_illumina_R2.fq illuminanames=t paired=t coverage=20 minlength=150 maxlength=150 midlength=150 minq=18 maxq=40 midq=31 addpairnum=t
+randomreads.sh ref=complete_genome.fasta out1=bbmap_illumina_.R1.fq out2=bbmap_illumina_R2.fq illuminanames=t paired=t coverage=20 minlength=150 maxlength=150 minq=18 maxq=40 midq=31 addpairnum=t
 # bbduk limpiar
 bbduk.sh in1=bbmap_illumina_tes.R1.fq in2=bbmap_illumina_tes.R2.fq out1=bbduk/bbduk.R1.fq out2=bbduk/bbduk.R2.fq minlength=100 qtrim=w trimq=20 
 
