@@ -58,3 +58,7 @@ jellyfish histo -t 6 ./jellyfish/reads.jf > ./jellyfish/reads.histo
 conda activate unicycler_env
 unicycler  -1 ./bbduk/bbduk.R1.fq -2 ./bbduk/bbduk.R2.fq -l PacBio.fq -o ./unicycler_hybrid/
 conda deactivate
+
+# Download files
+scp -P 1000 jorge.munoz@bioinfo.cena.usp.br:/Storage/data1/jorge.munoz/reads_and_reference.zip .
+mandarinasparadormir1188
