@@ -61,4 +61,3 @@ conda deactivate
 
 # Download files
 scp -P 1000 jorge.munoz@bioinfo.cena.usp.br:/Storage/data1/jorge.munoz/reads_and_reference.zip .
-mandarinasparadormir1188
